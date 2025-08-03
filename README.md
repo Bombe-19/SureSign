@@ -18,6 +18,22 @@ A **Siamese Neural Network** is a special type of neural network used to compare
 - Generalizes well to **new, unseen signatures** during inference.
 
 ---
+
+## Features
+- Preprocessing of grayscale signature images
+- Siamese CNN architecture for feature extraction
+- Custom contrastive loss and cosine similarity
+- Real-time prediction with image display
+- Accuracy improvements via augmentation & tuning
+---
+
+## How it Works 
+- Preprocess signature images (resize, normalize).
+- Generate pairs of genuine/forged signatures with labels.
+- Train a Siamese Network to learn similarity.
+- Predict whether a signature matches a reference using a similarity score.
+---
+
 ## Accuracy
 <img width="884" height="364" alt="image" src="https://github.com/user-attachments/assets/d4a25262-3b3c-4a12-89d4-4e314f10fc42" />
 
