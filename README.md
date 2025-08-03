@@ -53,6 +53,15 @@ A **Siamese Neural Network** is a special type of neural network used to compare
 ## Outcome
 
 The model outputs a **similarity score** between two signature images. If the score is above a defined threshold (e.g., 0.5), the signatures are classified as **Genuine**, else **Forged**.
+<p align="center">
+  <img src="images/Forged_Sign.png" width="500"/>
+  <img src="images/Geninue_Sign.png" width="500"/>
+</p>
+
+<p align="center">
+  <b>Forged Signature</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Geninue Signature</b>
+</p>
+
 
 ---
 
