@@ -69,8 +69,37 @@ The model outputs a **similarity score** between two signature images. If the sc
 
 ---
 
-## Image Extraction with the Existing model 
-Use the pre-trained Siamese model to compare two signature images and determine similarity. Just load the model, pass image pairs, and get verification results instantly, no need to retrain.
+## Image Extraction and Verification with the Existing model 
+- **Signature Extraction Code**: Extract signatures from scanned documents or image files using preprocessing techniques like resizing, thresholding, and contour detection.
+- **Original Signature**: The reference image used to verify authenticity.
+- **Extracted Signature (Test Image)**: The signature image extracted from input, used for comparison.
+- **Load the Trained Siamese Model**: Use the pre-trained Siamese model **(siamese_model.h5)** by loading it with the custom distance function.
+- **Verify Signatures**: Compare the original and test signature images using the trained model and check the similarity
+  - ✅ If similar → **"Matching"**
+  - ❌ If not similar → **"Not Matching"**
+- A simple and effective pipeline for real-time signature verification using a ready-to-use deep learning model.
+---
+
+## Output of Image extraction and Verification 
+<p align="center">
+  <b>Orignal Signature</b>
+</p>
+<p align="center">
+  <img src="images/Signature.png" width="400"/>
+</p>
+<p align="center">
+  <b>Test Signature Compared with Original image</b>
+</p>
+<p align="center">
+  <img src="images/Test_verf.png" width="400"/>
+</p>
+<p align="center">
+  <b>Test Signature Compared with Original image</b>
+</p>
+<p align="center">
+  <img src="images/Test_verf1.png" width="400"/>
+</p>
+
 
 
 
