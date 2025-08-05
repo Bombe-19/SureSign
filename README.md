@@ -69,3 +69,8 @@ The model outputs a **similarity score** between two signature images. If the sc
 
 ---
 
+## Image Extraction with the Existing model 
+Use the pre-trained Siamese model to compare two signature images and determine similarity. Just load the model, pass image pairs, and get verification results instantly, no need to retrain.
+
+
+
