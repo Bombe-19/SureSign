@@ -85,13 +85,13 @@ The model outputs a **similarity score** between two signature images. If the sc
   <b>Orignal Signature</b>
 </p>
 <p align="center">
-  <img src="images/Signature.png" width="400"/>
+  <img src="images/signature.png" width="400"/>
 </p>
 <p align="center">
   <b>Test Signature Compared with Original image</b>
 </p>
 <p align="center">
-  <img src="images/Test_verf.png" width="400"/>
+  <img src="images/Test_Verf.png" width="400"/>
 </p>
 <p align="center">
   <b>Test Signature Compared with Original image</b>
