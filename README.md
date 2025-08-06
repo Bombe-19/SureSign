@@ -49,6 +49,56 @@ A **Siamese Neural Network** is a special type of neural network used to compare
 | Use Case              | Image classification, object detection   | Face/signature verification, one-shot learning        |
 
 ---
+## Instruction For implementing 
+## Step 1: Downlaod the Kaggle Dataset(CEDAR)
+ - Here is the link for that=https://www.kaggle.com/datasets/matteocarnebella/cedar-signatures
+
+## Step 2: Open Google Colab
+
+- Mount Google Drive to access the project files.
+### Method: Mount via Python Code
+<img width="239" height="35" alt="image" src="https://github.com/user-attachments/assets/615adb7b-2a04-465c-9032-cbc3d6d9578e" />
+
+Click the third option (icon in Colab file panel) OR run the code below:
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+## Step 3: Create folder in Drive
+ - Create a folder called Data and upload the Kaggle downloaded image
+ - The path should be
+```python
+ drive/
+    └── MyDrive/
+        └── Data/
+            └── signatures/
+                └── signatures_1/
+                    ├── genuine_1_1.png
+                    ├── genuine_1_2.png
+                    ├── forgeries_1_1.png
+                    └── forgeries_1_2.png
+```
+## Step 4: Run the cells and downlaod the Model
+ - The code for this is =**ipynb/Sure_sign_SNN** run the cell and download the model
+  - The model name is **siamese_model2.h5**
+  - Create a folder in the drive called **saved_model** and the save the model in the folder 
+```
+/content/drive/MyDrive/Data/saved_model/siamese_model2.h5
+```
+## Step 5: Upload the file in the google colab(Document)
+  - A python code is bulid to extract the images and put them in different folders are **freehand_signatures** and **boxed_signatures**
+  - For extracting the signatures
+  - Click the first option in the colab file panel
+  - Save the Document file name as **signature.png**
+<img width="239" height="35" alt="image" src="https://github.com/user-attachments/assets/615adb7b-2a04-465c-9032-cbc3d6d9578e" />
+
+
+## Step 6: For Verfication and comparing the ouput 
+  - Downlaod the original image from the extracted images
+  - Same as the 5th step uplaod the original signature **signature1.png**
+  - The test images are the **freehand_signatures** and **boxed_signatures**
+<img width="260" height="144" alt="image" src="https://github.com/user-attachments/assets/07b7d401-9488-46f6-94d4-36d65a290814" />
 
 ## Outcome
 
